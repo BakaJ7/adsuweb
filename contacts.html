@@ -7,9 +7,56 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <style>
+        .contact-page-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .contact-info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .find-us-section {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .office-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+        
+        .office-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .transport-info {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .transport-info h4 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Шапка сайта -->
     <header>
         <div class="container">
             <div class="header-content">
@@ -33,15 +80,14 @@
         </div>
     </header>
 
-    <!-- Основное содержимое -->
     <main>
         <div class="container">
             <h1 class="page-title">Контакты</h1>
             <p class="page-subtitle">Свяжитесь с нами для обсуждения вашего проекта автоматизации</p>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
-                <div>
-                    <div class="card mb-30">
+            <div class="contact-page-content">
+                <div class="contact-info-section">
+                    <div class="card">
                         <h2 style="font-size: 26px; color: #1e3a8a; margin-bottom: 25px;">Контактная информация</h2>
                         
                         <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px;">
@@ -49,8 +95,8 @@
                                 <i class="fas fa-map-marker-alt" style="color: #1e3a8a; font-size: 20px;"></i>
                             </div>
                             <div>
-                                <h3 style="font-size: 18px; color: #1e3a8a; margin-bottom: 5px;">Адрес</h3>
-                                <p>г. Москва, ул. Складочная, д. 15, бизнес-центр "Логистик", 5 этаж, офис 502</p>
+                                <h3 style="font-size: 18px; color: #1e3a8a; margin-bottom: 5px;">Главный офис (Москва)</h3>
+                                <p>г. Москва, ул. Ленинская Слобода, д. 26, БЦ "Симонов Плаза", 8 этаж, офис 804</p>
                             </div>
                         </div>
                         
@@ -90,15 +136,43 @@
                     
                     <div class="card">
                         <h2 style="font-size: 26px; color: #1e3a8a; margin-bottom: 20px;">Наши офисы</h2>
-                        <div style="display: flex; gap: 20px;">
-                            <div style="flex: 1;">
-                                <h3 style="font-size: 18px; color: #1e3a8a; margin-bottom: 10px;">Москва</h3>
-                                <p style="font-size: 14px;">г. Москва, ул. Складочная, д. 15</p>
+                        <div class="office-card">
+                            <h3>Москва (Главный офис)</h3>
+                            <p>г. Москва, ул. Ленинская Слобода, д. 26, БЦ "Симонов Плаза", 8 этаж</p>
+                            <div class="transport-info">
+                                <h4>Как добраться</h4>
+                                <p>Ближайшая станция метро: <strong>«Автозаводская»</strong></p>
+                                <p>От метро: 7 минут пешком или 3 минуты на автобусе №670, 670к до остановки «Ленинская Слобода»</p>
                             </div>
-                            <div style="flex: 1;">
-                                <h3 style="font-size: 18px; color: #1e3a8a; margin-bottom: 10px;">Санкт-Петербург</h3>
-                                <p style="font-size: 14px;">г. Санкт-Петербург, пр. Логистический, д. 42</p>
+                        </div>
+                        
+                        <div class="office-card">
+                            <h3>Санкт-Петербург</h3>
+                            <p>г. Санкт-Петербург, ул. Ефимова, д. 6, БЦ "Порт CITY", 4 этаж, офис 412</p>
+                            <div class="transport-info">
+                                <h4>Как добраться</h4>
+                                <p>Ближайшая станция метро: <strong>«Сенная площадь»</strong> / <strong>«Садовая»</strong></p>
+                                <p>От метро: 5 минут пешком по ул. Ефимова</p>
                             </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h2 style="font-size: 26px; color: #1e3a8a; margin-bottom: 20px;">Как нас найти</h2>
+                        <p>Наши офисы расположены в современных бизнес-центрах с удобной транспортной доступностью.</p>
+                        
+                        <div style="margin-top: 20px; padding: 20px; background: #f8fafc; border-radius: 10px;">
+                            <h3 style="color: #1e3a8a; margin-bottom: 15px; font-size: 18px;">Московский офис</h3>
+                            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                                <div style="background: #1e3a8a; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-subway"></i>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 5px;">Станция метро: <span style="color: #1e3a8a;">«Автозаводская»</span></p>
+                                    <p style="font-size: 14px;">Замоскворецкая линия (зелёная)</p>
+                                </div>
+                            </div>
+                            <p>После выхода из метро поверните налево и идите по ул. Ленинская Слобода около 500 метров. Бизнес-центр "Симонов Плаза" будет справа.</p>
                         </div>
                     </div>
                 </div>
@@ -145,22 +219,9 @@
                     </form>
                 </div>
             </div>
-            
-            <div class="card">
-                <h2 style="font-size: 26px; color: #1e3a8a; margin-bottom: 20px; text-align: center;">Как нас найти</h2>
-                <div style="text-align: center; padding: 30px; background: #f8fafc; border-radius: 8px;">
-                    <div style="display: inline-block; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                        <i class="fas fa-map-marked-alt" style="font-size: 48px; color: #1e3a8a; margin-bottom: 15px;"></i>
-                        <h3 style="color: #1e3a8a; margin-bottom: 10px;">Московский офис</h3>
-                        <p style="margin-bottom: 15px;">Ближайшая станция метро: "Логистическая"</p>
-                        <p style="color: #64748b; font-size: 14px;">От метро: 10 минут пешком или 5 минут на автобусе №123</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 
-    <!-- Подвал сайта -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -172,7 +233,7 @@
                     <h4>Контакты</h4>
                     <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
                     <p><i class="fas fa-envelope"></i> info@leto-logistics.ru</p>
-                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Складочная, д. 15</p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Ленинская Слобода, д. 26</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -182,7 +243,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript для формы -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const contactForm = document.getElementById('contactForm');
@@ -191,38 +251,29 @@
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Получаем значения из формы
                 const name = document.getElementById('name').value;
                 const company = document.getElementById('company').value;
                 const phone = document.getElementById('phone').value;
                 const email = document.getElementById('email').value;
                 const message = document.getElementById('message').value;
                 
-                // Валидация телефона (базовая)
                 const phoneRegex = /^[\d\s\-\+\(\)]+$/;
                 if (!phoneRegex.test(phone)) {
                     showMessage('Пожалуйста, введите корректный номер телефона', 'error');
                     return;
                 }
                 
-                // Валидация email
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(email)) {
                     showMessage('Пожалуйста, введите корректный email адрес', 'error');
                     return;
                 }
                 
-                // Эмуляция отправки формы
                 showMessage('Отправка данных...', 'info');
                 
-                // Имитация задержки отправки
                 setTimeout(function() {
-                    // В реальном проекте здесь был бы код отправки на сервер
-                    
-                    // Показываем успешное сообщение
                     showMessage(`Спасибо, ${name}! Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время по телефону ${phone}.`, 'success');
                     
-                    // Создаем объект с данными заявки
                     const application = {
                         name: name,
                         company: company,
@@ -232,10 +283,8 @@
                         date: new Date().toLocaleString('ru-RU')
                     };
                     
-                    // Сохраняем в localStorage для демонстрации
                     saveApplication(application);
                     
-                    // Очищаем форму
                     contactForm.reset();
                 }, 1500);
             });
@@ -244,7 +293,6 @@
                 formMessage.textContent = text;
                 formMessage.style.display = 'block';
                 
-                // Устанавливаем цвет в зависимости от типа сообщения
                 if (type === 'error') {
                     formMessage.style.backgroundColor = '#fef2f2';
                     formMessage.style.color = '#dc2626';
@@ -261,20 +309,16 @@
             }
             
             function saveApplication(application) {
-                // Получаем существующие заявки из localStorage
                 let applications = JSON.parse(localStorage.getItem('leto_applications')) || [];
                 
-                // Добавляем новую заявку
                 applications.push(application);
                 
-                // Сохраняем обратно в localStorage
                 localStorage.setItem('leto_applications', JSON.stringify(applications));
                 
                 console.log('Заявка сохранена. Всего заявок:', applications.length);
                 console.log('Последняя заявка:', application);
             }
             
-            // Дополнительный функционал: подсветка заполненных полей
             const formInputs = contactForm.querySelectorAll('input, textarea');
             formInputs.forEach(input => {
                 input.addEventListener('input', function() {
@@ -288,7 +332,6 @@
                 });
             });
             
-            // Показываем количество сохраненных заявок (для демонстрации)
             const applications = JSON.parse(localStorage.getItem('leto_applications')) || [];
             console.log(`Всего сохраненных заявок: ${applications.length}`);
         });
